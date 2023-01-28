@@ -1,0 +1,16 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "blog-post",
+            "type": "shell",
+            "command": "source ~/work/wordpress-post/.venv/bin/activate && python ~/work/wordpress-post/post.py ${workspaceFolder} ${file}",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
